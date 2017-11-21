@@ -18,8 +18,7 @@ location = 'eastus'
 response = azurerm.create_resource_group(auth_token, subscription_id, 
 resourcegroup_name, location)
 if response.status_code == 200 or response.status_code == 201:
-print('Resource group: ' + resourcegroup_name + ' created 
-successfully.')
+print('Resource group: ' + resourcegroup_name + ' created successfully.')
 else:
 print('Error creating resource group')
 # Create a storage account for our demo
